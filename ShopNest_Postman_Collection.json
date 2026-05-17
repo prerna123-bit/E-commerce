@@ -256,7 +256,7 @@
               ]
             },
             "url": {
-              "raw": "http://localhost:5000/api/products/",
+              "raw": "https://e-commerce-production-a165.up.railway.app/api/products/",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -268,7 +268,7 @@
                 ""
               ]
             },
-            "description": "Generated from cURL: curl --location 'http://localhost:5000/api/products' \\\r\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\r\n--form 'name=\"Product Name\"' \\\r\n--form 'description=\"Product Description\"' \\\r\n--form 'price=\"99.99\"' \\\r\n--form 'category=\"Electronics\"' \\\r\n--form 'stock=\"50\"' \\\r\n--form 'image=@\"/path/to/image.jpg\"'"
+            "description": "Generated from cURL: curl --location 'https://e-commerce-production-a165.up.railway.app/api/products' \\\r\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\r\n--form 'name=\"Product Name\"' \\\r\n--form 'description=\"Product Description\"' \\\r\n--form 'price=\"99.99\"' \\\r\n--form 'category=\"Electronics\"' \\\r\n--form 'stock=\"50\"' \\\r\n--form 'image=@\"/path/to/image.jpg\"'"
           },
           "response": []
         },
@@ -313,7 +313,7 @@
               ]
             },
             "url": {
-              "raw": "http://localhost:5000/api/products/69e88d27e51103fdd44cb50c",
+              "raw": "https://e-commerce-production-a165.up.railway.app/api/products/69e88d27e51103fdd44cb50c",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -325,7 +325,7 @@
                 "69e88d27e51103fdd44cb50c"
               ]
             },
-            "description": "Generated from cURL: curl --location --request PUT 'http://localhost:5000/api/products/PRODUCT_ID' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--form 'name=\"Updated Product Name\"' \\\n--form 'description=\"Updated Description\"' \\\n--form 'price=\"149.99\"' \\\n--form 'category=\"Electronics\"' \\\n--form 'stock=\"100\"' \\\n--form 'image=@\"/path/to/image.jpg\"'"
+            "description": "Generated from cURL: curl --location --request PUT 'https://e-commerce-production-a165.up.railway.app/api/products/PRODUCT_ID' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--form 'name=\"Updated Product Name\"' \\\n--form 'description=\"Updated Description\"' \\\n--form 'price=\"149.99\"' \\\n--form 'category=\"Electronics\"' \\\n--form 'stock=\"100\"' \\\n--form 'image=@\"/path/to/image.jpg\"'"
           },
           "response": []
         },
@@ -370,7 +370,7 @@
               ]
             },
             "url": {
-              "raw": "http://localhost:5000/api/products/69e88d27e51103fdd44cb50c",
+              "raw": "https://e-commerce-production-a165.up.railway.app/api/products/69e88d27e51103fdd44cb50c",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -382,7 +382,7 @@
                 "69e88d27e51103fdd44cb50c"
               ]
             },
-            "description": "Generated from cURL: curl --location --request PUT 'http://localhost:5000/api/products/PRODUCT_ID' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--form 'name=\"Updated Product Name\"' \\\n--form 'description=\"Updated Description\"' \\\n--form 'price=\"149.99\"' \\\n--form 'category=\"Electronics\"' \\\n--form 'stock=\"100\"' \\\n--form 'image=@\"/path/to/image.jpg\"'"
+            "description": "Generated from cURL: curl --location --request PUT 'https://e-commerce-production-a165.up.railway.app/api/products/PRODUCT_ID' \\\n--header 'Authorization: Bearer YOUR_TOKEN_HERE' \\\n--form 'name=\"Updated Product Name\"' \\\n--form 'description=\"Updated Description\"' \\\n--form 'price=\"149.99\"' \\\n--form 'category=\"Electronics\"' \\\n--form 'stock=\"100\"' \\\n--form 'image=@\"/path/to/image.jpg\"'"
           },
           "response": []
         }
