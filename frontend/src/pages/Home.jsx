@@ -5,7 +5,7 @@ const Home = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
- useEffect(() => {
+useEffect(() => {
   const fetchProducts = async () => {
     try {
       const response = await fetch(
@@ -18,7 +18,7 @@ const Home = () => {
 
       setProducts(data.slice(0, 4));
     } catch (error) {
-      console.error("Fetch Error:", error);
+      console.error(error);
     } finally {
       setLoading(false);
     }
