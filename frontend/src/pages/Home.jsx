@@ -5,19 +5,16 @@ const Home = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+ useEffect(() => {
   const fetchProducts = async () => {
     try {
       const response = await fetch(
         "https://e-commerce-production-a165.up.railway.app/api/products"
       );
 
-      console.log(response);
+      const data = await response.json();
 
-      const text = await response.text();
-      console.log(text);
-
-      const data = JSON.parse(text);
+      console.log(data);
 
       setProducts(data.slice(0, 4));
     } catch (error) {
