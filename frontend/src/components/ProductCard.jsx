@@ -5,7 +5,14 @@ import '../styles/product.css';
 const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
-      <img src={product.image} alt={product.name} className="product-image" />
+
+      <img
+        src={product.image || "https://via.placeholder.com/150"}
+        alt={product.name}
+        className="product-image"
+      />
+
+      <pre>{JSON.stringify(product, null, 2)}</pre>
 
       <div className="product-info">
         <h3>{product.name}</h3>
