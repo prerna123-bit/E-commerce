@@ -6,19 +6,29 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await fetch('https://e-commerce-production-a165.up.railway.app/api/products');
-        const data = await res.json();
-        setProducts(data.slice(0, 4)); // Featured products
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchProducts();
-  }, []);
+  const fetchProducts = async () => {
+    try {
+      const response = await fetch(
+        "https://e-commerce-production-a165.up.railway.app/api/products"
+      );
+
+      console.log(response);
+
+      const text = await response.text();
+      console.log(text);
+
+      const data = JSON.parse(text);
+
+      setProducts(data.slice(0, 4));
+    } catch (error) {
+      console.error("Fetch Error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchProducts();
+}, []);
 
   return (
     <div className="home-container">
