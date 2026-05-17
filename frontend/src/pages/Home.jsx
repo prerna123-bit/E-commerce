@@ -37,6 +37,7 @@ const Home = () => {
         <p>Discover the best products at unbeatable prices.</p>
       </div>
       <h2>Featured Products</h2>
+      <pre>{JSON.stringify(products, null, 2)}</pre>
       {loading ? (
         <div>Loading...</div>
       ) : (
