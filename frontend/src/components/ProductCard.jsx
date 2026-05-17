@@ -12,8 +12,6 @@ const ProductCard = ({ product }) => {
         className="product-image"
       />
 
-      <pre>{JSON.stringify(product, null, 2)}</pre>
-
       <div className="product-info">
         <h3>{product.name}</h3>
         <p className="price">₹{product.price}</p>
