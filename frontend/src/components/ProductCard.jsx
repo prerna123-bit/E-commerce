@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
     <div className="product-card">
 
       <img
-        src={product.image || "https://via.placeholder.com/150"}
+        src={product.image || "https://dummyimage.com/300x300/222/fff.png&text=iPhone"}
         alt={product.name}
         className="product-image"
       />
