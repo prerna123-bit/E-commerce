@@ -38,7 +38,7 @@ useEffect(() => {
         productId: product._id,
         name: product.name,
         price: product.price,
-        imageUrl: product.imageUrl,
+        image: product.image,
         qty: 1
       }));
       alert('Successfully added to your cart!');
@@ -59,7 +59,7 @@ useEffect(() => {
       <div className="product-detail">
         {/* Left Side: Image */}
         <div className="detail-image-container">
-          <img src={product.imageUrl} alt={product.name} className="detail-image" />
+          <img src={product.image} alt={product.name} className="detail-image" />
         </div>
 
         {/* Right Side: Information Block */}
