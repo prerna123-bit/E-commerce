@@ -6,11 +6,14 @@ const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
 
-      <img
-        src={product.image || "https://dummyimage.com/300x300/222/fff.png&text=iPhone"}
-        alt={product.name}
-        className="product-image"
-      />
+    <img
+  src={
+    product.image ||
+    "https://dummyimage.com/300x300/222/fff.png&text=Product"
+  }
+  alt={product.name}
+  className="product-image"
+/>
 
       <div className="product-info">
         <h3>{product.name}</h3>
