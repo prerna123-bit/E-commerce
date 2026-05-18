@@ -10,20 +10,27 @@ const ProductDetail = () => {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        const res = await fetch(`/api/products/${id}`);
-        const data = await res.json();
-        setProduct(data);
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchProduct();
-  }, [id]);
+useEffect(() => {
+  const fetchProduct = async () => {
+    try {
+      const res = await fetch(
+        `https://e-commerce-production-a165.up.railway.app/api/products/${id}`
+      );
+
+      const data = await res.json();
+
+      console.log(data);
+
+      setProduct(data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchProduct();
+}, [id]);
 
   const handleAddToCart = () => {
     if (product) {
