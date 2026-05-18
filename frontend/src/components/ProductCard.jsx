@@ -6,11 +6,8 @@ const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
 
-    <img
-  src={
-    product.image ||
-    "https://dummyimage.com/300x300/222/fff.png&text=Product"
-  }
+  <img
+  src={product.imageUrl}
   alt={product.name}
   className="product-image"
 />
